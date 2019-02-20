@@ -1,6 +1,8 @@
 <h1><%= @department.name %></h1>
-<%= link_to 'Back', departments_path%>
+<%= link_to 'Back', departments_path %>
+<%= link_to 'Create a new item', new_department_item_path(@department) %>
 <h3> Located on Floor <%= @department.floor %> </h3>
+
 
 <p>What would you like to do?</p>
 <%= link_to 'Edit', edit_department_path(@department) %>

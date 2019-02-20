@@ -49,7 +49,7 @@ private
   end
 
   def department_params
-    params.require(:department).permit(:name)
+    params.require(:department).permit(:name, :floor)
   end
 
 end
