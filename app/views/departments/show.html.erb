@@ -1,0 +1,8 @@
+<h1><%= @department.name %></h1>
+<%= link_to 'Back', departments_path%>
+<h3> Located on Floor <%= @department.floor %> </h3>
+
+<p>What would you like to do?</p>
+<%= link_to 'Edit', edit_department_path(@department) %>
+<br />
+<%= link_to 'Delete', @department, method: :delete %>
