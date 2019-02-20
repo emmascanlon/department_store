@@ -5,13 +5,11 @@ one:
   brand: MyString
   price: 1
   description: MyText
-  department: MyString
-  belongs_to: MyString
+  department: one
 
 two:
   name: MyString
   brand: MyString
   price: 1
   description: MyText
-  department: MyString
-  belongs_to: MyString
+  department: two

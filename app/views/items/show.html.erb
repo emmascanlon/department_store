@@ -1,2 +1,10 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+
+
+<h1><%=@item.name %><h2>
+<h3><%=@item.brand%> || $<%=@item.price %> <br>
+<h4>Description: <%=@item.description %>
+<br>
+<br>
+<%= link_to 'Back to Department', department_path %>
+
+

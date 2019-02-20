@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
-  before_action: set_department
-  before_action: set_item, only: [:show, :edit, :update, :destroy]
+  before_action :set_department
+  before_action :set_item, only: [:show, :edit, :update, :destroy]
   
   def index
     @items = @department.items
@@ -19,7 +19,7 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = @department.item.new(item_params)
+    @item = @department.items.new(item_params)
     if @department.save
       redirect_to [@department, @item]
     else
@@ -57,7 +57,6 @@ end
 end
 
 
-##########################################################################
 
 
 

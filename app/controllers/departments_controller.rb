@@ -1,5 +1,5 @@
 class DepartmentsController < ApplicationController
-  before_action :set_department, only: [:show, :update, :edit, :destroy]
+  before_action :set_department, only: [:show, :update, :edit, :destroy,]
 
   def index
     @departments = Department.all
