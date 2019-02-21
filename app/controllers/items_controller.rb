@@ -29,6 +29,7 @@ class ItemsController < ApplicationController
 
 
   def destroy
+    binding.pry
     @item.destroy
     redirect_to department_items_path
   end

@@ -1,11 +1,12 @@
 <h1>Departments</h1>
+<h6>(departments index)</h6>
 <%= link_to 'Create a new department', new_department_path %>
 <br>
 
   <% @departments.each do |department| %>
     <h3><%= department.name %></h3>
-  <p><%= link_to 'View', department %></p>
-  <%= link_to 'Edit', edit_department_path(@department) %>
-  <%= link_to 'Delete', @department, method: :delete %>
+  <%= link_to 'View', department %>
+  <%= link_to 'Delete', department, method: :delete %>
+  <%= link_to 'Edit', edit_department_path(department) %>
   <% end %>
 

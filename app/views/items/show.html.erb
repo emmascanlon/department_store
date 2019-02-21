@@ -5,6 +5,8 @@
 <h4>Description: <%=@item.description %>
 <br>
 <br>
+<%= link_to 'Edit', edit_department_item_path([@department, @item]) %>
+<%= link_to 'Delete', [@department, @item], method: :delete %>
 <%= link_to 'Back to Department', department_path %>
 
 
