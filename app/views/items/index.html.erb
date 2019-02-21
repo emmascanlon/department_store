@@ -1,6 +1,8 @@
-<h1>Items<h2>
-<%= link_to 'Create a new item', new_department_item_path(@department) %> <br>
 
+<h3><%= link_to 'Create a new item', new_department_item_path(@department) %> ||
+<%= link_to 'Back to Department', department_path(@department) %> </h3>
+<br>
+<h1>Items</h1>
   <% @items.each do |item| %>
     <%= link_to item.name, [@department, item] %>
     <br>
